@@ -1,0 +1,36 @@
+.form_style{
+	margin-left:450px;
+	background-color:black;
+
+	width:500px;
+
+
+}
+
+
+
+.p_style{
+	margin-left:170px;
+	font-size:20px;
+	color:white;
+}
+
+.h1_style{
+	text-align:center;
+	color:white;
+	font-size:40px;
+	text-decoration: underline;
+}
+
+.h1{
+ font-size:60px;
+
+ background-color:blue;
+}
+
+
+
+
+.btn_style{
+	margin-left:200px;
+}

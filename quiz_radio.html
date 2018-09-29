@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Javascript Introduction</title>
+
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+	<div class="form_style">
+
+		<h1 class=h1_style>IQ TEST</h1>
+
+		<form>
+
+			<p class="p_style">
+				1. What is 5 + 5?
+				<br/>
+				<input  type ="radio" id="option1" name="answer" value="correct" > 10
+				<br/>
+				<input  type ="radio" id="option2" name="answer" value="wrong" > 3
+				<br/>
+				<input  type = "radio" id="option3"  name="answer" value="wrong"> 6
+			</p>
+
+			<br/>
+	
+
+
+			<p class="p_style">
+				2. What is 8 divided by 2?
+		              
+				 <br/>
+				 <input  type ="radio" id="option4" name="answer1" value="wrong" > 5
+				 <br/>
+				 <input  type ="radio" id="option5" name="answer1" value="correct" > 4
+				 <br/>
+				 <input  type = "radio" id="option6"  name="answer1" value="wrong"> 9
+
+			</p>
+			 <br/>
+			
+
+
+			 <p class="p_style">
+				 3. What is the square of 9?
+		   
+				 <br/>
+				 <input  type ="radio" id="option7" name="answer2" value="wrong" > 36
+				 <br/>
+				 <input  type ="radio" id="option8" name="answer2" value="wrong" > 100
+				 <br/>
+				 <input  type = "radio" id="option9"  name="answer2" value="correct"> 81
+
+			</p>
+
+			 <br/>
+		
+
+
+			 <p class="p_style">
+				 4. What is the square  of 12?
+		   
+				 <br/>
+				 <input  type ="radio" id="option10" name="answer3" value="wrong" > 100
+				 <br/>
+				 <input  type ="radio" id="option11" name="answer3" value="wrong" > 144
+				 <br/>
+				 <input  type = "radio" id="option12"  name="answer3" value="correct"> 81
+
+			</p>
+	              <script>
+	              	
+	             	function show()
+	              	{
+						var answer1=document.getElementById("option1");
+
+						var answer2=document.getElementById("option5");
+
+						var answer3=document.getElementById("option9");
+					
+						var answer4=document.getElementById("option11");
+
+						x = 0;
+
+
+						if (true==answer1.checked)
+						{
+
+						x=x+1;
+						  document.write("<br/><h1>1. Correct</h1>");
+
+						}
+						
+						else
+						{
+						  document.write("<br/><h1>1. Wrong</h1>");
+
+						
+						}
+
+
+						
+					
+
+						if (true==answer2.checked)
+						{
+						  x++;
+						  document.write("<br/><h1>2. Correct</h1>");
+
+						  
+						}
+						
+						else
+						{
+						  document.write("<br/><h1>2. Wrong</h1>");
+					
+						}
+
+
+
+						if (true==answer3.checked)
+						{
+							x++;
+						  document.write("<br/><h1>3. Correct</p>");
+  
+						}
+						
+						else
+						{
+						  document.write("<br/><h1>3. Wrong</h1>");
+
+						
+						}
+
+
+						if (true==answer4.checked)
+						{
+
+							x++;
+						  document.write("<br/><h1>4. Correct</h1>");
+
+						  document.write("<br/><p>Your score out of 4 is:</p> " + x );
+						}
+						
+						else
+						{
+						  document.write("<br/><h1>4. Wrong</h1>");
+						  document.write("<br/><p>Your score out of 4 is:</p> " + x );
+
+						}
+
+
+						if(x<=2)
+						{
+							document.write("<br/><h3><i>You are an embarassement to the human race!!!</i></h3>");
+						}
+						
+						else
+						{
+							document.write("<br/><h3><i>You are mentally sound!!!</i></h3>");
+						}
+
+					}
+
+
+
+	              </script>
+
+	              <br/>
+	              <br/>
+	              <button class="btn_style" type="submit" onclick="show()">Submit</button>
+
+		</form>
+
+	</div>
+</body>
+
+<!-- <script> -->
+
+
+	
+
+
+
+
+
+<!-- </script> -->
+
+
+
+</html>
